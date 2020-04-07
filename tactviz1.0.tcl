@@ -265,7 +265,7 @@ proc tv::help {} {
   puts "\ttv::del < molecule ID | top >\t(Delete molecule)"
   puts "\ttv::swell\t(Apply depth-based shading)"
   puts "\ttv::shade\t< light | medium | dark >\t(Adjust shading)"
-  puts "\ttv::rep\t< cartoon | surface >\t(Change represetion)"
+  puts "\ttv::rep\t< cartoon | surface >\t(Change represention)"
   puts "\ttv::proj < perspective | orthographic >\t(Set projection mode)"
   puts "\ttv::zoom < in | out >\t(Zoom in or out)"
   puts "\ttv::pan < north | south | east | west >\t(Pan in directions)"
