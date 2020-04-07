@@ -38,18 +38,32 @@ tv::help
 
 A complete list of available commands is also provided below.
 
-Current TactViz user options are:\n
+Current TactViz user options are:
+
 tv::new < PDB ID | myfile.pdb >         (Load molecule)
+
 tv::del < molecule ID | top >           (Delete molecule)
+
 tv::swell                               (Apply depth-based shading)
+
 tv::shade < light | medium | dark >     (Adjust shading)
+
 tv::rep < cartoon | surface >           (Change represetion)
+
 tv::proj < perspective | orthographic > (Set projection mode)
+
 tv::zoom < in | out >                   (Zoom in or out)
+
 tv::pan < north | south | east | west > (Pan in directions)
+
 tv::rotx < degrees >                    (Rotate about X axis)
+
 tv::roty < degrees >                    (Rotate about Y axis)
+
 tv::rotz < degrees >                    (Rotate about Z axis)
+
 tv::axes                                (Describe viewing direction)
+
 tv::reset                               (Reset viewpoint)
+
 tv::render < filename >                 (Render image to filename)
