@@ -32,12 +32,12 @@ VMD command line, substituting the correct path to the script on your computer:
 source /path/to/script/tactviz1.0.tcl
 
 All TactViz commands begin with the tv:: prefix.
-Run the TactViz help command to see a complete list of available commands:
 
-tv::help
+Run the TactViz help command, tv::help, to see a complete list of available
+commands. A complete list of available commands is also provided below.
 
-A complete list of available commands is also provided below. Current TactViz
-user options are:
+Commands
+--------
 
 tv::new < PDB ID | myfile.pdb >         (Load molecule)
 
