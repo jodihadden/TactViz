@@ -29,14 +29,15 @@ devices (e.g., Graphiti) for interactive biomolecular visualization, or it can
 be used to produce biomolecular images that can be printed as variable-height
 tactile graphics with swell-form machines (e.g., Pictures In A Flash).
 
-People with disabilities have unique abilities! We hope that public
-release of TactViz will promote STEM education for students who are visually
-impaired and inclusion of researchers who are visually impaired in STEM fields
-including computational structural biology, biochemistry, and biophysics.
-
 Currently, TactViz only supports tactile visualization of proteins.
 You can download protein structure files (PDBs) from the Protein Data Bank
 (https://www.rcsb.org/).
+
+People with disabilities have unique abilities! We hope that public
+release of TactViz will promote STEM education for students who are visually
+impaired and greater participation of researchers who are visually impaired in
+STEM fields, including computational structural biology, biochemistry, and
+biophysics.
 
 Citation
 --------  
@@ -72,7 +73,7 @@ tv::swell                               (Apply depth-based shading)
 
 tv::shade < light | medium | dark >     (Adjust shading)
 
-tv::rep < cartoon | surface >           (Change represetion)
+tv::rep < cartoon | surface >           (Change representation)
 
 tv::proj < perspective | orthographic > (Set projection mode)
 

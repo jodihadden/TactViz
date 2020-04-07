@@ -19,7 +19,7 @@ namespace eval tv:: {
 # Display
 #
 display rendermode GLSL
-display projection orthographic 
+display projection orthographic
 display depthcue on
 display nearclip set 0.01
 display cuedensity 0.45
@@ -53,21 +53,21 @@ material change outlinewidth TactileSolid 0.000000
 material change transmode TactileSolid 0.000000
 
 #
-# Drawing Method 
+# Drawing Method
 #
 proc tv::swell {} {
   mol modselect 0 top "protein"
-  mol modcolor 0 top ColorID 2 
+  mol modcolor 0 top ColorID 2
   mol modstyle 0 top NewCartoon
   mol modmaterial 0 top TactileSolid
   puts "Default representation applied"
 }
 
 #
-# Representation 
+# Representation
 #
 proc tv::rep { args } {
-  if { $args == "NewCartoon" || $args == "cartoon" || $args == "cart" || $args == "c" } { 
+  if { $args == "NewCartoon" || $args == "cartoon" || $args == "cart" || $args == "c" } {
     mol modstyle 0 top NewCartoon
     puts "Representation changed to New Cartoon"
   } elseif { $args == "QuickSurf" || $args == "surface" || $args == "surf" || $args == "s" } {
@@ -102,7 +102,7 @@ proc tv::shade { args } {
 proc tv::proj { args } {
   if { $args == "perspective" || $args == "persp" || $args == "p" } {
     display argsection perspective
-    puts "Projection is perspective" 
+    puts "Projection is perspective"
   } elseif { $args == "orthographic" || $args == "ortho" || $args == "o" } {
     display argsection orthographic
     puts "Projection is orthographic"
@@ -139,7 +139,7 @@ proc tv::pan { args } {
   } elseif { $args == "east" || $args == "e"} {
     translate by 0.2 0 0
     puts "Panned east"
-  } elseif { $args == "west" || $args == "w"} { 
+  } elseif { $args == "west" || $args == "w"} {
     translate by -0.2 0 0
     puts "Panned west"
   } else {
@@ -200,17 +200,17 @@ proc tv::axes {} {
   set vector [list $viewdir $north $east]
   for {set i 0} {$i < 3} {incr i} {
     if { [lindex [lindex $vector $i] 0] < 1.001 && [lindex [lindex $vector $i] 0] > 0.999 } { ; # +x
-      set c($i) "+X"  
+      set c($i) "+X"
     } elseif { [lindex [lindex $vector $i] 0] > -1.001 && [lindex [lindex $vector $i] 0] < -0.999 } { ; # -x
       set c($i) "-X"
     } elseif { [lindex [lindex $vector $i] 1] < 1.001 && [lindex [lindex $vector $i] 1] > 0.999 } { ; # +y
       set c($i) "+Y"
     } elseif { [lindex [lindex $vector $i] 1] > -1.001 && [lindex [lindex $vector $i] 1] < -0.999 } { ; # -y
-      set c($i) "-Y" 
+      set c($i) "-Y"
     } elseif { [lindex [lindex $vector $i] 2] < 1.001 && [lindex [lindex $vector $i] 2] > 0.999 } { ; # +z
       set c($i) "+Z"
     } elseif { [lindex [lindex $vector $i] 2] > -1.001 && [lindex [lindex $vector $i] 2] < -0.999 } { ; # -z
-      set c($i) "-Z" 
+      set c($i) "-Z"
     } else {
       set c($i) "non-cardinal"
     }
@@ -233,12 +233,12 @@ proc tv::new { args } {
 }
 
 #
-# Delete molecule 
+# Delete molecule
 #
 proc tv::del { args } {
   if { $args != "" } {
     mol delete $args
-    puts "Molecule $args deleted" 
+    puts "Molecule $args deleted"
   } else {
     puts "Indicate molecule ID or top"
   }
@@ -265,7 +265,7 @@ proc tv::help {} {
   puts "\ttv::del < molecule ID | top >\t(Delete molecule)"
   puts "\ttv::swell\t(Apply depth-based shading)"
   puts "\ttv::shade\t< light | medium | dark >\t(Adjust shading)"
-  puts "\ttv::rep\t< cartoon | surface >\t(Change represention)"
+  puts "\ttv::rep\t< cartoon | surface >\t(Change representation)"
   puts "\ttv::proj < perspective | orthographic >\t(Set projection mode)"
   puts "\ttv::zoom < in | out >\t(Zoom in or out)"
   puts "\ttv::pan < north | south | east | west >\t(Pan in directions)"
@@ -284,4 +284,3 @@ if {[molinfo top] != -1} {
   tv::swell
 }
 puts "TactViz enabled"
-
