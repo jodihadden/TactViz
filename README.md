@@ -28,7 +28,6 @@ Delaware. TactViz can be used with electronic refreshable tactile display
 devices (e.g., Graphiti) for interactive biomolecular visualization, or it can
 be used to produce biomolecular images that can be printed as variable-height
 tactile graphics with swell-form machines (e.g., Pictures In A Flash).
-
 Currently, TactViz only supports tactile visualization of proteins.
 You can download protein structure files (PDBs) from the Protein Data Bank
 (https://www.rcsb.org/).
