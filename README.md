@@ -7,6 +7,8 @@ TactViz is under active development.
 For feedback, suggestions, and feature requests, contact:
 Jodi Hadden-Perilla, University of Delaware (jhadden@udel.edu)
 
+Visit us on the web at: https://sites.udel.edu/jhadden/
+
 Overview
 --------
 
@@ -24,7 +26,7 @@ be used to produce biomolecular images that can be printed as tactile graphics
 with swell-form machines (e.g., Pictures In A Flash). We hope TactViz promotes
 inclusion of students and researchers who are blind or visually impaired in
 computational structural biology, biochemistry, and biophysics. Currently, only
-protein visualization is supported. 
+protein visualization is supported.
 
 Citation
 --------  
