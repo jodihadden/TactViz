@@ -4,7 +4,7 @@ VMD plugin for tactile visualization of biomolecules
 Welcome to TactViz version 1.0 !
 
 TactViz is under active development.
-To provide feedback, make suggestions, or request features, contact:
+To provide feedback, make suggestions, or request features contact:
 
 Jodi Hadden-Perilla, University of Delaware (jhadden@udel.edu)
 
