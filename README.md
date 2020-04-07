@@ -13,23 +13,30 @@ Visit us on the web at: https://sites.udel.edu/jhadden/
 Overview
 --------
 
-TactViz is a plugin for the Visual Molecular Dynamics Software (VMD), available
+TactViz is a plugin for the Visual Molecular Dynamics (VMD) software, available
 for download here:
 
 https://www.ks.uiuc.edu/Research/vmd/
+
+TactViz is written in TCL. You can download it here:
+https://github.com/jodihadden/TactViz
 
 TactViz was designed to improve the biomolecular visualization and analysis
 experience in VMD for users who are blind or visually impaired. It was developed
 based on the needs of student Olivia Shaw in the Hadden Lab at the University of
 Delaware. TactViz can be used with electronic refreshable tactile display
 devices (e.g., Graphiti) for interactive biomolecular visualization, or it can
-be used to produce biomolecular images that can be printed as tactile graphics
-with swell-form machines (e.g., Pictures In A Flash). We hope TactViz promotes
-inclusion of students and researchers who are blind or visually impaired in
-computational structural biology, biochemistry, and biophysics.
+be used to produce biomolecular images that can be printed as variable-height
+tactile graphics with swell-form machines (e.g., Pictures In A Flash).
 
-Currently, only protein visualization is supported. You can download protein
-structure files from the Protein Data Bank (https://www.rcsb.org/).
+People with disabilities have unique abilities! We hope that public
+release of TactViz will promote STEM education for students who are visually
+impaired and inclusion of researchers who are visually impaired in STEM fields
+including computational structural biology, biochemistry, and biophysics.
+
+Currently, TactViz only supports tactile visualization of proteins.
+You can download protein structure files (PDBs) from the Protein Data Bank
+(https://www.rcsb.org/).
 
 Citation
 --------  
