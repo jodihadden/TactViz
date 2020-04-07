@@ -38,7 +38,7 @@ tv::help
 
 A complete list of available commands is also provided below.
 
-Current TactViz user options are:
+Current TactViz user options are:\n
 tv::new < PDB ID | myfile.pdb >         (Load molecule)
 tv::del < molecule ID | top >           (Delete molecule)
 tv::swell                               (Apply depth-based shading)
