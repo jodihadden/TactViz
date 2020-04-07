@@ -26,8 +26,10 @@ devices (e.g., Graphiti) for interactive biomolecular visualization, or it can
 be used to produce biomolecular images that can be printed as tactile graphics
 with swell-form machines (e.g., Pictures In A Flash). We hope TactViz promotes
 inclusion of students and researchers who are blind or visually impaired in
-computational structural biology, biochemistry, and biophysics. Currently, only
-protein visualization is supported.
+computational structural biology, biochemistry, and biophysics.
+
+Currently, only protein visualization is supported. You can download protein
+structure files from the Protein Data Bank (https://www.rcsb.org/).
 
 Citation
 --------  
