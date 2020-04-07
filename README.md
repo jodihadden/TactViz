@@ -36,9 +36,8 @@ Run the TactViz help command to see a complete list of available commands:
 
 tv::help
 
-A complete list of available commands is also provided below.
-
-Current TactViz user options are:
+A complete list of available commands is also provided below. Current TactViz
+user options are:
 
 tv::new < PDB ID | myfile.pdb >         (Load molecule)
 
