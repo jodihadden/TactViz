@@ -19,8 +19,8 @@ experience in VMD for users who are blind or visually impaired. It was developed
 based on the needs of student Olivia Shaw in the Hadden Lab at the University of
 Delaware. If you use TactViz for your research, please cite it as follows:
 
-TactViz: A VMD plugin for tactile visualization of protein structures
-Olivia R. Shaw and Jodi A. Hadden-Perilla
+TactViz: A VMD plugin for tactile visualization of protein structures.
+Olivia R. Shaw and Jodi A. Hadden-Perilla.
 Journal of Science Education for Students with Disabilities (2020) Accepted.
 
 Usage
