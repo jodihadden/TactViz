@@ -68,10 +68,10 @@ proc tv::swell {} {
 #
 proc tv::rep { args } {
   if { $args == "NewCartoon" || $args == "cartoon" || $args == "cart" || $args == "c" } {
-    mol modstyle 0 top NewCartoon
+    mol modstyle 0 top NewCartoon 0.600000 12.000000 2.350000 0
     puts "Representation changed to New Cartoon"
-  } elseif { $args == "QuickSurf" || $args == "surface" || $args == "surf" || $args == "s" } {
-    mol modstyle 0 top QuickSurf
+  } elseif { $args == "QuickSurf" || $args == "surface" || $args == "surf"|| $args == "s" } {
+    mol modstyle 0 top QuickSurf 1.000000 0.500000 1.000000 2.000000
     puts "Representation changed to QuickSurf"
   } else {
     puts "Representation options are: cartoon (c) or surface (s)"
@@ -249,8 +249,20 @@ proc tv::del { args } {
 #
 proc tv::render { args } {
   if { $args != "" } {
-    ::render TachyonInternal $args.tga
+    ::render snapshot $args.tga display %s
     puts "Image rendered to filename: [pwd]/$args.tga"
+  } else {
+    puts "Provide filename"
+  }
+}
+
+#
+# Render STL
+#
+proc tv::stl { args } {
+  if { $args != "" } {
+    ::render STL $args.stl true
+    puts "Image rendered to filename: [pwd]/$args.stl"
   } else {
     puts "Provide filename"
   }
@@ -261,20 +273,20 @@ proc tv::render { args } {
 #
 proc tv::help {} {
   puts "TactViz user options are:"
-  puts "\ttv::new < PDB ID | myfile.pdb >\t(Load molecule)"
-  puts "\ttv::del < molecule ID | top >\t(Delete molecule)"
-  puts "\ttv::swell\t(Apply depth-based shading)"
-  puts "\ttv::shade\t< light | medium | dark >\t(Adjust shading)"
-  puts "\ttv::rep\t< cartoon | surface >\t(Change representation)"
-  puts "\ttv::proj < perspective | orthographic >\t(Set projection mode)"
-  puts "\ttv::zoom < in | out >\t(Zoom in or out)"
-  puts "\ttv::pan < north | south | east | west >\t(Pan in directions)"
-  puts "\ttv::rotx < degrees > \t(Rotate about X axis)"
-  puts "\ttv::roty < degrees > \t(Rotate about Y axis)"
-  puts "\ttv::rotz < degrees > \t(Rotate about Z axis)"
-  puts "\ttv::axes\t(Describe viewing direction)"
-  puts "\ttv::reset\t(Reset viewpoint)"
-  puts "\ttv::render < filename >\t(Render image to filename)"
+  puts "\ttv::new < PDB ID | myfile.pdb > (Load molecule)"
+  puts "\ttv::del < molecule ID | top > (Delete molecule)"
+  puts "\ttv::swell (Apply depth-based shading)"
+  puts "\ttv::shade < light | medium | dark > (Adjust shading)"
+  puts "\ttv::rep < cartoon | surface > (Change representation)"
+  puts "\ttv::proj < perspective | orthographic > (Set projection mode)"
+  puts "\ttv::zoom < in | out > (Zoom in or out)"
+  puts "\ttv::pan < north | south | east | west > (Pan in directions)"
+  puts "\ttv::rotx < degrees > (Rotate about X axis)"
+  puts "\ttv::roty < degrees > (Rotate about Y axis)"
+  puts "\ttv::rotz < degrees > (Rotate about Z axis)"
+  puts "\ttv::axes (Describe viewing direction)"
+  puts "\ttv::reset (Reset viewpoint)"
+  puts "\ttv::render < filename > (Render image to filename)"
 }
 
 #
