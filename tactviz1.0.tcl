@@ -257,7 +257,7 @@ proc tv::render { args } {
 }
 
 #
-# Render STL
+# Render STL file
 #
 proc tv::stl { args } {
   if { $args != "" } {
@@ -287,6 +287,7 @@ proc tv::help {} {
   puts "\ttv::axes (Describe viewing direction)"
   puts "\ttv::reset (Reset viewpoint)"
   puts "\ttv::render < filename > (Render image to filename)"
+  puts "\ttv::stl < filename > (Render STL file to filename)"
 }
 
 #
