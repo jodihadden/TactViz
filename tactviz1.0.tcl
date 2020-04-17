@@ -116,10 +116,10 @@ proc tv::proj { args } {
 #
 proc tv::zoom { args } {
   if { $args == "in" || $args == "i" } {
-    scale by 1.1
+    scale by 1.2
     puts "Zoomed in"
   } elseif { $args == "out" || $args == "o" } {
-    scale by 0.9
+    scale by 0.833
     puts "Zoomed out"
   } else {
     puts "Zoom options are: in (i) or out (o)"
