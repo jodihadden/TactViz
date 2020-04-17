@@ -58,7 +58,7 @@ material change transmode TactileSolid 0.000000
 proc tv::swell {} {
   mol modselect 0 top "protein"
   mol modcolor 0 top ColorID 2
-  mol modstyle 0 top NewCartoon
+  mol modstyle 0 top NewCartoon 0.600000 12.000000 2.350000 0
   mol modmaterial 0 top TactileSolid
   puts "Default representation applied"
 }
