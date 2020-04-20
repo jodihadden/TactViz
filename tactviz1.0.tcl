@@ -297,3 +297,4 @@ if {[molinfo top] != -1} {
   tv::swell
 }
 puts "TactViz enabled"
+puts "For a list of options, enter tv::help"
