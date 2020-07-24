@@ -3,9 +3,16 @@
 ##
 ## A script to create tactile-image-friendly representations of proteins in VMD
 ##
-## Authors: Jodi Hadden-Perilla and Olivia Shaw, 2020
+## Authors: 
+## Jodi Hadden-Perilla and Olivia Shaw, 2020
 ## Department of Chemistry and Biochemistry, University of Delaware
 ##
+## Citation:
+## Shaw, Olivia R. and Hadden-Perilla, Jodi A. (2020) 
+## "TactViz: A VMD Plugin for Tactile Visualization of Protein Structures," 
+## Journal of Science Education for Students with Disabilities: Vol. 23 : Iss. 1.
+## Available at: https://scholarworks.rit.edu/jsesd/vol23/iss1/14 
+## 
 ## To make a suggestion or request a feature, contact us at jhadden@udel.edu
 ##
 
